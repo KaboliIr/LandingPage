@@ -220,7 +220,7 @@
                            <textarea name="" id="" cols="30" rows="10" placeholder="متن دلخواه"></textarea>
                        </li>
                        <li class="Btn-Send">
-                           <a href="#" id="BtnSend-Data">ارسال</a>
+                           <a href="$" id="BtnSend-Data" onclick="test()">ارسال</a>
                        </li>
                    </ul>
                </div> 
@@ -238,5 +238,12 @@
    </footer>
 
 </body>
+<script>
+    function test(event){
+        console.log("Hello world...")
+        console.log(event);
+        event.preventDefault();
+    }
+</script>
 <script src="js/index.js"></script>
 </html>

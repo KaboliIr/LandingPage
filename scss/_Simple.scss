@@ -64,7 +64,7 @@
 
         //The Container
         .Container{
-            width: 90%;
+            width: 100%;
             border: 1px solid red;
 
             .row{
@@ -73,15 +73,25 @@
 
                 //The h1
                 h1{
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
 
                 //The Slider
                 .Simple-Slider{
+                    width: 100%;
                     border: 1px solid green;
 
+
+ 
+                    //The Img
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    //The Arrow Key
                     a>i{
                         font-size: 1rem;
+                        display: none;
                     }
                 }
             }

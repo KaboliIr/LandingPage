@@ -125,20 +125,21 @@ html, body {
   .NavBar .Container .row .MenuHmb .menu {
     width: 90%;
     position: absolute;
-    top: 100%;
+    top: -260px;
     left: 0;
     -webkit-transform: translate(6%, 0%);
             transform: translate(6%, 0%);
     -webkit-transition: 1s;
     transition: 1s;
     font-size: 0.9rem;
-    display: none;
     text-align: center;
     background-color: var(--white);
     border-radius: 0px 0px 10px 10px;
     -webkit-box-shadow: 0px 3px 10px lightgray;
             box-shadow: 0px 3px 10px lightgray;
     overflow: auto;
+    -webkit-transition-timing-function: cubic-bezier(0.19, 1, 0.22, 2);
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 2);
   }
   .NavBar .Container .row .MenuHmb .menu a {
     width: 100%;
@@ -232,12 +233,8 @@ html, body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
-  .Header {
-    border: 1px solid black;
-  }
   .Header .Container {
     width: 90%;
-    border: 1px solid red;
   }
   .Header .Container .row {
     text-align: center;
@@ -312,7 +309,7 @@ html, body {
     min-height: auto;
   }
   .Simple .Container {
-    width: 90%;
+    width: 100%;
     border: 1px solid red;
   }
   .Simple .Container .row {
@@ -320,13 +317,19 @@ html, body {
     height: 100%;
   }
   .Simple .Container .row h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .Simple .Container .row .Simple-Slider {
+    width: 100%;
     border: 1px solid green;
+  }
+  .Simple .Container .row .Simple-Slider img {
+    width: 100%;
+    height: auto;
   }
   .Simple .Container .row .Simple-Slider a > i {
     font-size: 1rem;
+    display: none;
   }
 }
 
@@ -630,21 +633,17 @@ html, body {
     width: 100%;
     height: auto;
     text-align: center;
-    border: 1px solid black;
   }
   .Content .Container .row .Content-right .Content-map, .Content .Container .row .Content-left .Content-map {
-    border: 1px solid red;
     height: auto;
   }
   .Content .Container .row .Content-right .Content-map .Map > img, .Content .Container .row .Content-left .Content-map .Map > img {
-    border: 1px solid black;
     width: 100%;
     height: auto;
   }
   .Content .Container .row .Content-right .Content-map .Content-map-title, .Content .Container .row .Content-left .Content-map .Content-map-title {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
   }
   .Content .Container .row .Content-right .Content-Form, .Content .Container .row .Content-left .Content-Form {
     height: auto;

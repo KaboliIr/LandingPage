@@ -199,16 +199,16 @@
                   width: 100%;
                   height: auto;
                   text-align: center;
-                  border: 1px solid black;
+                //   border: 1px solid black;
 
                   //The Content Map
                   .Content-map{
-                      border: 1px solid red;
+                    //   border: 1px solid red;
                       height: auto;
 
                       //The map
                         .Map>img{
-                                border: 1px solid black;
+                                // border: 1px solid black;
                                 width: 100%;
                                 height: auto;
                           }
@@ -217,7 +217,7 @@
                           .Content-map-title{
                               margin: 0;
                               padding: 0;
-                              border: 1px solid red;
+                            //   border: 1px solid red;
                           }
                       
                   }

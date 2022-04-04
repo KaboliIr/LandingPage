@@ -5,26 +5,37 @@ var El={
     ListmenuHum:document.getElementById("ListMenuHum"),
     Moon:document.getElementById("Moon"),
     Icon:document.querySelector("#Moon>i"),
+    Links:document.querySelectorAll("a"),
     x:0,
     M:0
 
 }
-console.log(El.ListmenuHum);
-console.log(El.menuHum);
+// console.log(El.ListmenuHum);
+// console.log(El.menuHum);
+El.Links.forEach(element => {
+element.setAttribute("onclick",test=(e)=>{e.preventDefault()});
+console.log(element);
+});
+console.log(El.Links);
 //Function
+// var x=0
 function OpenMenuHum(){
+    // This is Close Menu
     if(El.x==0){
      El.menuHum.style.transition="1s";
-     El.ListmenuHum.style.display="none";
+    //  El.ListmenuHum.style.display="none";
      El.menuHum.className="bi bi-list MenuHmb";
+     El.ListmenuHum.style.top="-260px";
         El.x=1;
         return El.x;
     }
+    //This is Open Menu
     else if(El.x==1){
         El.menuHum.style.transition="1s";
-        El.ListmenuHum.style.display="block";
-        El.x=0
+        // El.ListmenuHum.style.display="block";
+        El.ListmenuHum.style.top="80px";
         El.menuHum.className="bi bi-x-lg MenuHmb";
+        El.x=0
         return El.x;
     }
 };
