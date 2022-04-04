@@ -1,0 +1,144 @@
+//The Nav Styleing
+
+
+
+
+//The NavBar
+.NavBar{
+    width: 100%;
+    min-height: 70px;
+    position: sticky;
+    top:0%;
+    background-color: var(--white);
+    box-shadow: 0px 2px 7px lightgray;
+    border: 1px solid white;
+
+    //The Container
+    .Container{
+        margin:20px auto;
+        width:80%;
+        min-height: 100%;
+        //The row
+        .row{
+            width: 100%;
+            min-height: 100%;
+            @include Flex-between();
+
+             //The menu HumberGer
+             .MenuHmb{
+                 display: none;
+             }
+            
+            //The Center
+            .Nav-center{
+                width: 60%;
+                @include Flex-around();
+               //The Link a
+                a{
+                    transition:1s;
+                    font-weight: bold;
+                    color: var(--gray);
+                //The Hover Link
+                    &:hover{
+                        color: var(--gold);
+                    }
+                }
+            }
+              //The right and The Left
+            .Nav-right,.Nav-left{
+                padding: 0px 10px;
+ 
+                //The Link a
+                a{
+                    color: var(--Black);
+                    font-size: 1.2rem;
+                  // The Font Icon
+                    i{
+                        font-size: 1.2em;
+                    }
+
+                 
+                }
+
+                
+            }
+        }
+    }
+
+}
+
+//The NavBar Mobail
+@media screen and (min-width:0px) and (max-width:600px) {
+    .NavBar{
+        width: 100%;
+        // border: 1px solid black;
+        position: fixed;
+        top: 0;
+
+        //The Container
+        .Container{
+            margin: 0px auto;
+            width: 90%;
+            height: 100%;
+            // border: 1px solid red;
+           //The row
+            .row{
+            display: flex;
+      
+            //The menu Hmberger
+            .MenuHmb{
+                display: block;
+                // border: 1px solid black;
+                font-size: 2.3rem;
+                cursor: pointer;
+                // position: relative;
+                &:focus{
+                    outline-color: none;
+                }
+
+                .menu{
+                    width: 90%;
+                    position: absolute;
+                    top:100%;
+                    left: 0;
+                    transform: translate(6%,0%);
+                    transition: 1s;
+                    // border: 1px solid black;
+                    font-size: 0.9rem;
+                    display:none;
+                    text-align: center;
+                    background-color: var(--white);
+                    border-radius: 0px 0px 10px 10px;
+                    box-shadow: 0px 3px 10px lightgray;
+                    overflow:auto;
+
+
+                    a{
+                        width: 100%;
+                        display:block;
+                        color: var(--black);
+                        font-weight: bold;
+                        padding: 15px 0px;
+                        transition: 1s;
+                        // overflow: auto;
+
+                        &:hover{
+                            background-color:var(--gold);
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+
+            //The NavBar Center
+            .Nav-center{
+                display: none;
+            }
+
+            
+            }
+        }
+    }
+
+}
+

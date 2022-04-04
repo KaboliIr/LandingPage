@@ -1,0 +1,50 @@
+// The Styleing Footer
+
+
+//The Footer
+.Footer{
+    width: 100%;
+    min-height: 70px;
+    // border: 1px solid black;
+
+    //The Container
+    .Container{
+        width: 90%;
+        min-height:100%;
+
+        //The row
+        .row{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+
+            //The h3 and h5
+                      
+        }
+    }
+}
+
+//The Footer Mobail
+@media screen and (min-width:0px) and (max-width:600px) {
+    
+    //The Footer
+    .Footer{
+       width: 100%;
+
+        //The Container
+        .Container{
+            margin: 0px auto;
+            width: 90%;
+            // border: 1px solid red;
+
+            .row{
+                width: 100%;
+
+                //The H3
+                h3{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

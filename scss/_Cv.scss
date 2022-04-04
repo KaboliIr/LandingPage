@@ -1,0 +1,136 @@
+//The Cv Styleing....
+
+
+//The Cv
+.Cv{
+    width: 100%;
+    min-height: 500px;
+    // border: 1px solid black;
+
+    //The Container
+    .Container{
+        margin: 0px auto;
+        width: 80%;
+        min-height: 100%;
+        // border: 1px solid green;
+
+        //The row
+        .row{
+            width: 100%;
+            min-height: 100%;
+            // border: 1px solid red;
+            display: flex;
+            text-align: center;
+
+
+            //The Cv left and Cv right
+            .Cv-right,.Cv-left{
+                width: 50%;
+                height: 100%;
+                // border: 1px solid purple;
+                
+                //The h1
+                h1{
+                    font-size: 2rem;
+                    font-weight: 900;
+                }
+                //The Cv list
+                .Cv-list{
+                    width: 100%;
+                    height: 500px;
+                    // border: 1px solid black;
+
+                    //The Cv-List-Item
+                    .Cv-List-Item{
+                        width: 100%;
+                        height: 100px;
+                        // border: 1px solid red;
+                        display: flex;
+                        margin: 20px 0px;
+                        border-left: 2px solid var(--Darkblack);
+
+                        .Cv-Circle-years{
+                            width: 20%;
+                            height: 100%;
+                            // border: 1px solid red;
+                            @include Flex-Center();
+
+                            .Circle{
+                                width: 85px;
+                                height:85px;
+                                border-radius: 50%;
+                                background-color:var(--Darkblack);
+                                color: var(--white);
+                                @include Flex-Center();
+                            }
+                        }
+                        .Cv-Circle-Discription{
+                            width: 80%;
+                            height: 100%;
+                            // border: 1px solid green;
+                            text-align: right;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+
+//The Cv Mobail
+@media screen and (min-width:0px) and (max-width:600px) {
+    //The Cv
+    .Cv{
+        width: 100%;
+        // border: 1px solid black;
+
+        //The Container
+        .Container{
+            width: 90%;
+            margin: 100px auto;
+            // border: 1px solid red;
+
+            //The row
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+
+                //The Cv left and right
+
+                .Cv-right,.Cv-left{
+                    width: 100%;
+                    height: auto;
+
+
+                    //The Cv List
+                    .Cv-list{
+                        // border: 1px solid red;
+
+                        //The Cv item
+                         .Cv-List-Item{
+                             height: auto;
+                            //  border: 1px solid green;
+
+                             .Cv-Circle-years>.Circle{
+                                 width: 70px;
+                                 height: 70px;
+                             }
+                             .Cv-Circle-Discription{
+                                //  border: 1px solid orange;
+                                 padding:0px 10px;
+
+                                 h3{
+                                     font-size: 1rem;
+                                 }
+                                 p{
+                                     font-size: 0.8rem;
+                                 }
+                             }
+                         }
+                    }
+                }
+            }
+        }
+    }
+    
+}

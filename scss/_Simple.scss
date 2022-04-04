@@ -1,0 +1,91 @@
+//The Simple Styleing...
+
+//The Simple
+.Simple{
+    width: 100%;
+    min-height: 500px;
+    // border: 1px solid black;
+
+    //The Container
+    .Container{
+        margin: 0px auto;
+        width: 85%;
+        min-height:100%;
+        // border: 1px solid red;
+
+        //The row
+        .row{
+            text-align: center;
+            width: 100%;
+            min-height:100%;
+            // border: 1px solid green;
+
+            //The h1
+            h1{
+                  font-size: 2em;
+            }
+            //The Simple Slider
+            .Simple-Slider{
+                // border: 1px solid blue;
+                @include Flex-around();
+
+                //The i OR iCON
+                a{
+                    color: var(--black);
+                    i{
+                        font-size: 5rem;
+                        // border: 1px solid black;
+    
+                        &:hover{
+                            color: var(--gold);
+                        }
+                    }
+
+                }
+                
+
+                //The img
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+//The Simple Mobail
+@media screen and (min-width:0px) and (max-width:500px) {
+    
+    //The Simple
+    .Simple{
+        border: 1px solid black;
+        min-height: auto;
+
+        //The Container
+        .Container{
+            width: 90%;
+            border: 1px solid red;
+
+            .row{
+                width: 100%;
+                height: 100%;
+
+                //The h1
+                h1{
+                    font-size: 1rem;
+                }
+
+                //The Slider
+                .Simple-Slider{
+                    border: 1px solid green;
+
+                    a>i{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

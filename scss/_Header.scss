@@ -1,0 +1,122 @@
+//The Header Styleing
+
+
+//The Header
+.Header{
+    width: 100%;
+    min-height: 500px;
+    // border: 1px solid black;
+
+    //The Container
+    .Container{
+        margin: 0px auto;
+        width: 80%;
+        min-height: 100%;
+
+        //The row
+        .row{
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+
+            //The Header-right
+            .Header-right{
+                width: 60%;
+                height:auto;
+                // border:1px solid red;
+                margin: 100px auto;
+                
+
+            
+                // The heading 1
+                h1{
+                 font-size: 3rem;
+                }
+                //The Bold
+                b{
+                    color: var(--gold);
+                }
+                //The paragraph
+               p{
+                   height: 70px;
+               }
+               //The Btns
+                a{
+                    display: inline-block;
+                    margin:50px 0px 0px 20px;
+                    padding: 5px 15px;
+                    border-radius: 10px;
+                    background-color:var(--gray);
+                    font-weight: bold;
+                    color: var(--white);
+                    transition: 1s;
+                    &:hover{
+                        background-color: var(--Darkgray);
+                        color:var(--black);
+                    }
+                    &:active{
+                        background-color: var(--Darkgray);
+                    }
+                    // border: 1px solid black;
+                }
+                //The Btn Active
+                #Active{
+                    background-color: var(--Darkgray);
+                }
+
+            }
+            //The Header-Left
+            .Header-left{
+                width: 40%;
+                height: 100%;
+                // border: 1px solid green;
+                margin: 100px auto;
+   
+                //The Image
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+}
+
+//The Header Mobail
+@media screen and (min-width:0px) and (max-width:600px) {
+    //The Header
+    .Header{
+        border: 1px solid black;
+  
+        //The Container
+      .Container{
+          width: 90%;
+          border: 1px solid red;
+ 
+          //The row
+          .row{
+              text-align: center;
+              flex-wrap: wrap;
+
+              //The Header right
+              .Header-right{
+                  width: 100%;
+                  height: auto;
+
+                  //The btn
+                  a{
+                      margin: 25px auto;
+                      width: 90%;
+
+                  }
+              }
+              //The Header left
+              .Header-left{
+                  width: 100%;
+                //   border: 1px solid black;
+              }
+          }
+      }
+    }
+}

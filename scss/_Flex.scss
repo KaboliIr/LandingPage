@@ -1,0 +1,70 @@
+//The Flex Center
+@mixin  Flex-Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//The Flex Around Space
+@mixin Flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+// The Flex between
+@mixin Flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+//The Flex Everly
+@mixin Flex-evenly {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+//The Flex End
+@mixin Flex-End {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+//----------------------------------- The Column Flex
+
+// Flex center Column
+@mixin Flex-Center-Column {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    @include Flex-Center();
+    
+}
+//Flex space around Column
+@mixin Flex-around-Column {
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+    flex-direction: column;
+    @include Flex-around();
+    
+}
+
+// Flex space between Column
+@mixin Flex-between-Column {
+    // display: flex;
+    // justify-content:space-between;
+    // align-items: center;
+    flex-direction: column;
+    @include Flex-between();
+}
+
+//Flex space evenly Column
+@mixin  Flex-evenly-Column {
+    // display: flex;
+    // justify-content: space-evenly;
+    // align-items: center;
+    flex-direction: column;
+    @include Flex-evenly();
+    
+}
