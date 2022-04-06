@@ -26,12 +26,13 @@
             }
             //The Simple Slider
             .Simple-Slider{
-                // border: 1px solid blue;
+                // border: 10px solid blue;
                 @include Flex-around();
 
                 //The i OR iCON
                 a{
                     color: var(--black);
+                    display: none;
                     i{
                         font-size: 5rem;
                         // border: 1px solid black;
@@ -42,13 +43,32 @@
                     }
 
                 }
+                #ChangePo{
+                    width:100%;
+                    height:auto;
+                    // border:10px solid red;
+                    overflow: auto ;
+                    // position: relative;
+
                 
 
-                //The img
-                img{
-                    width: 90%;
-                    height: auto;
+                    .PageSlider{
+                        width: 100%;
+                        height: auto;
+                        // border: 5px solid purple;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        //The img
+                        img{
+                            width:90%;
+                            height:auto;
+                        }
+                    }
+                    
                 }
+
             }
         }
     }
@@ -59,13 +79,13 @@
     
     //The Simple
     .Simple{
-        border: 1px solid black;
+        // border: 1px solid black;
         min-height: auto;
 
         //The Container
         .Container{
             width: 100%;
-            border: 1px solid red;
+            // border: 1px solid red;
 
             .row{
                 width: 100%;
@@ -79,15 +99,20 @@
                 //The Slider
                 .Simple-Slider{
                     width: 100%;
-                    border: 1px solid green;
+                    // border: 1px solid green;
+                    // position: relative;
 
-
+                      //chage Postion
+                      #ChangePo{
+                          width:100%;
+                          //The Img
+                          img{
+                              width: 100%;
+                              height: 100%;
+                            //   border:1px solid red;
+                          }
+                      }
  
-                    //The Img
-                    img{
-                        width: 100%;
-                        height: auto;
-                    }
                     //The Arrow Key
                     a>i{
                         font-size: 1rem;

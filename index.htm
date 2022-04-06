@@ -56,11 +56,11 @@
                  <h1>توانایی های من <b>برنامه نویسی</b></h1>
                <p>شما میتوانید رزومه من را بررسی و با خیالی آسوده پروژه های بزرگ خود را به من بسپارید</p>
                <div class="Header-Btns">
-                   <a href="#">
+                   <a href="#" class="BtnsPre">
                     <i class="bi bi-card-text"></i>
                        دانلود رزومه من
                     </a>
-                   <a href="#" id="Active">تماس با من</a>
+                   <a href="#" class="BtnsPre" id="Active">تماس با من</a>
                </div>
              </div>
              <div class="Header-left">
@@ -78,8 +78,20 @@
                    <a href="#">
                     <i class="bi bi-arrow-right-short"></i>
                    </a>
+                    
+                        <div id="ChangePo">
+                            <div class="PageSlider" id="SliderOne">
+                               <img src="Img/project-image01.png" alt="">
+                            </div>
+                            <div class="PageSlider" id="SliderTwo">
+                               <img src="Img/project-image02.png" alt="">
+                            </div>
+                            <div class="PageSlider" id="SliderThree">
+                               <img src="Img/project-image03.png" alt="">
+                            </div>
+                            
+                        </div>
                 
-                   <img src="Img/project-image01.png" alt="">
                    <a href="#">
                     <i class="bi bi-arrow-left-short"></i>
                    </a>
@@ -220,7 +232,7 @@
                            <textarea name="" id="" cols="30" rows="10" placeholder="متن دلخواه"></textarea>
                        </li>
                        <li class="Btn-Send">
-                           <a href="$" id="BtnSend-Data" onclick="test()">ارسال</a>
+                           <a href="$" class="BtnsPre" id="BtnSend-Data">ارسال</a>
                        </li>
                    </ul>
                </div> 
@@ -238,12 +250,6 @@
    </footer>
 
 </body>
-<script>
-    function test(event){
-        console.log("Hello world...")
-        console.log(event);
-        event.preventDefault();
-    }
-</script>
-<script src="js/index.js"></script>
+<script src="js/index.js" type="module"></script>
+<script src="js/Function/Menu.js" type="module"></script>
 </html>

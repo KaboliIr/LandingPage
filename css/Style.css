@@ -288,6 +288,7 @@ html, body {
 
 .Simple .Container .row .Simple-Slider a {
   color: var(--black);
+  display: none;
 }
 
 .Simple .Container .row .Simple-Slider a i {
@@ -298,19 +299,37 @@ html, body {
   color: var(--gold);
 }
 
-.Simple .Container .row .Simple-Slider img {
+.Simple .Container .row .Simple-Slider #ChangePo {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.Simple .Container .row .Simple-Slider #ChangePo .PageSlider {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Simple .Container .row .Simple-Slider #ChangePo .PageSlider img {
   width: 90%;
   height: auto;
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
   .Simple {
-    border: 1px solid black;
     min-height: auto;
   }
   .Simple .Container {
     width: 100%;
-    border: 1px solid red;
   }
   .Simple .Container .row {
     width: 100%;
@@ -321,11 +340,13 @@ html, body {
   }
   .Simple .Container .row .Simple-Slider {
     width: 100%;
-    border: 1px solid green;
   }
-  .Simple .Container .row .Simple-Slider img {
+  .Simple .Container .row .Simple-Slider #ChangePo {
     width: 100%;
-    height: auto;
+  }
+  .Simple .Container .row .Simple-Slider #ChangePo img {
+    width: 100%;
+    height: 100%;
   }
   .Simple .Container .row .Simple-Slider a > i {
     font-size: 1rem;
@@ -487,13 +508,19 @@ html, body {
 
 .Content .Container .row .Content-right .Content-map {
   width: 85%;
-  height: 490px;
+  height: 400px;
 }
 
 .Content .Container .row .Content-right .Content-map .Map {
   width: 100%;
-  height: 60%;
+  height: auto;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .Content .Container .row .Content-right .Content-map .Map img {
@@ -617,11 +644,9 @@ html, body {
 @media screen and (min-width: 0px) and (max-width: 600px) {
   .Content {
     width: 100%;
-    border: 1px solid black;
   }
   .Content .Container {
     width: 90%;
-    border: 1px solid red;
     margin: 0px auto;
   }
   .Content .Container .row {
@@ -640,10 +665,6 @@ html, body {
   .Content .Container .row .Content-right .Content-map .Map > img, .Content .Container .row .Content-left .Content-map .Map > img {
     width: 100%;
     height: auto;
-  }
-  .Content .Container .row .Content-right .Content-map .Content-map-title, .Content .Container .row .Content-left .Content-map .Content-map-title {
-    margin: 0;
-    padding: 0;
   }
   .Content .Container .row .Content-right .Content-Form, .Content .Container .row .Content-left .Content-Form {
     height: auto;
